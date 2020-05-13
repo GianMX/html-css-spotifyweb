@@ -1,3 +1,172 @@
-* {
+*  {
+  background-color: black;
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* MAIN PAGE */
+/* MAIN LEFT*/
+.mx_wrap {
+  height: 100vh;
+  width: 100%;
+  background-color: #121212;
+  overflow-y: scroll;
+}
+/* SPOTIFY logo */
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 250px;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 10px;
+  background-color: black;
+}
+.logo img {
+  height: 50px;
+  padding: 10px 0 0 15px;
+}
+/* MAIN LEFT general rules */
+.main_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: calc(100% - 150px);
+  width: 250px;
+  background-color: black;
+  margin-top: 60px;
+  padding-left: 10px;
+}
+.main_left a {
+  text-decoration: none;
+  color: grey;
+  font-size: 13px;
+}
+.main_left h3 {
+  font-size : 14px;
+}
+.main_left a:hover {
+  text-decoration: none;
+  color: white;
+}
+a.mx_greenyellow_left {
+  border-left: 2px solid greenyellow;
+  font-weight: bold;
+  color: white;
+}
+/* TOP main left */
+.top-container {
+  list-style: none;
+  line-height: 35px;
+  padding-top: 20px;
+}
+#home img {
+  width: 10%;
+  vertical-align: middle;
+  margin-left: 7px;
+}
+/* MID main left */
+.mid {
+  min-height: 100px;
+  overflow-y: auto;
+  margin-left: 1px;
+  flex-grow: 2;
+}
+.mx_white_pad {
+  color: white;
+  margin-left: 7px;
+}
+#playlist {
+  list-style: none;
+  margin-left: 10px;
+  line-height: 35px;
+}
+#playlist li:nth-child(1) > a {
+  font-size: 15px;
+}
+.cross {
+  display: inline-block;
+  content: '+';
+  width: 37px;
+  height: 37px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 35px;
+  text-align: center;
+  line-height: 37px;
+  vertical-align: middle;
+  color: black;
+}
+/* BOTTOM main left */
+.bottom {
+  padding: 10px;
+}
+.bottom-up {
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightgrey;
+}
+.bottom-down {
+  padding-top: 15px;
+}
+.bottom-up img {
+  height: 15px;
+  margin-right: 5px;
+}
+.bottom-down img {
+  height: 25px;
+  margin-right: 5px;
+  background-color: grey;
+  border-radius: 60%;
+}
+.bottom-down a {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+/* MEDIA QUERY MAIN LEFT */
+@media all and (max-width: 768px) {
+  .main_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: calc(100vh - 140px);
+    width: 50px;
+    background-color: black;
+    padding: 5px;
+    margin-top: 50px; 
+  }
+  .logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    padding-top: 0px;
+  }
+  .logo img {
+    height: 35px;
+    padding: 15px 0 0 10px;
+  }
+  .download img{
+    height: 20px;
+    margin-bottom: 10px;
+  }
+  .profile img {
+    height: 30px;
+    border-radius: 30px;
+    background-color: lightgrey;
+  }
+  .bottom {
+    padding: 5px;
+  }
 }
