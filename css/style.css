@@ -1,5 +1,4 @@
 *  {
-  background-color: black;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
@@ -10,7 +9,7 @@
 .mx_wrap {
   height: 100vh;
   width: 100%;
-  background-color: #121212;
+  background-color: #141922;
   overflow-y: scroll;
 }
 /* SPOTIFY logo */
@@ -19,7 +18,7 @@
   top: 0;
   left: 0;
   height: 60px;
-  width: 250px;
+  width: 230px;
   text-align: left;
   padding-left: 5px;
   padding-top: 10px;
@@ -38,7 +37,7 @@
   left: 0;
   top: 0;
   height: calc(100% - 150px);
-  width: 250px;
+  width: 230px;
   background-color: black;
   margin-top: 60px;
   padding-left: 10px;
@@ -142,7 +141,7 @@ a.mx_greenyellow_left {
     width: 50px;
     background-color: black;
     padding: 5px;
-    margin-top: 50px; 
+    margin-top: 50px;
   }
   .logo {
     position: fixed;
@@ -170,3 +169,182 @@ a.mx_greenyellow_left {
     padding: 5px;
   }
 }
+/* MAIN RIGHT */
+/*BANNER*/
+#banner {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  justify-content: flex-end;
+  top: 0;
+  right: 0;
+  height: 90px;
+  width: calc(100% - 230px);
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: right;
+  padding: 10px;
+  z-index: 9000;
+}
+.mx_upgrade_btn {
+  display: inline-block;
+  background-color: black;
+  font-size: 10px;
+  border-radius: 20px;
+  padding:10px 40px;
+  margin-right: 10px;
+  width: 200px;
+  border: 1px solid white;
+  text-align: center;
+}
+.mx_upgrade_btn:hover {
+  padding: 10px;
+  font-size: 12px;
+}
+#banner .mx_upgrade_btn {
+  text-decoration: none;
+  color: white;
+}
+/* MAIN RIGHT CONTENT*/
+/* MAIN RIGHT General rules */
+.main_right {
+  width: calc(100% - 230px);
+  height: calc(100% - 90px);
+  margin-top: 90px;
+  margin-left: 230px;
+  margin-bottom: 90px;
+  padding: 20px;
+}
+/* MAIN RIGHT Music */
+.mx_flex_container_menu a {
+  color:grey;
+  padding: 0 0 0 25px;
+  font-size: 13px;
+  text-decoration: none;
+}
+.mx_flex_container_menu a:hover {
+  color:white;
+  text-decoration: none;
+}
+.highlights {
+  position: relative;
+}
+.highlights:after {
+  position: absolute;
+  left: 45%;
+  content: "";
+  display: table;
+  height: 2px;
+  width: 40px;
+  background-color: greenyellow;
+}
+.mx_flex_container_menu {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 45px;
+}
+#recently_played h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.GianMX {
+  margin-top: 40px;
+}
+.GianMX h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.GianMX p {
+  color: grey;
+  font-size: 12px;
+}
+/* MAIN RIGHT Flex item */
+.flex_album_container {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  flex-wrap: nowrap;
+}
+.flex_album_container_two {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  flex-wrap: nowrap;
+}
+.flex_item {
+  padding: 10px;
+}
+.flex_item img {
+  width: 100%;
+}
+.flex_item h5 {
+  color:white;
+  font-weight: bold;
+  font-size: 16px;
+}
+.flex_item p {
+  color:grey;
+  font-size: 12px;
+}
+.flex_album_container_two .flex_item{
+ flex-basis: calc(100% / 6);
+}
+.flex_album_container .flex_item {
+ flex-basis: calc(100% / 6);
+}
+.box_img {
+ position: relative;
+}
+.box_img.popolari img {
+  border-radius: 50%;
+}
+/* MAIN RIGHT shadow and start play */
+.flex_item.popolari .box_shadow {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+.flex_item .box_shadow {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.flex_item:hover .box_shadow {
+  visibility: visible;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.box_shadow i {
+  font-size: 50px;
+  color: white;
+}
+/* MEDIA QUERY MAIN RIGHT */
