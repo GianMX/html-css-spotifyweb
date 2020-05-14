@@ -209,8 +209,8 @@ a.mx_greenyellow_left {
 .main_right {
   width: calc(100% - 230px);
   height: calc(100% - 90px);
+  float: right;
   margin-top: 90px;
-  margin-left: 230px;
   margin-bottom: 90px;
   padding: 20px;
 }
@@ -353,7 +353,8 @@ a.mx_greenyellow_left {
     width: calc(100% - 50px);
   }
   .main_right {
-    margin-left: 160px;
+    float:right;
+    margin-right: 120px;
   }
   .mx_upgrade_btn {
     width: 250px;
